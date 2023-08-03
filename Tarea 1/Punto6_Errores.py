@@ -1,7 +1,9 @@
 import random
+
+
 def obtener_cartas():
     # Definimos dos listas: una para los palos de las cartas
-    # y otra para los valores de las cartas. 
+    # y otra para los valores de las cartas.
     palos = ['Corazones', 'Diamantes', 'Tréboles', 'Picas']
     valores = ['2', '3', '4', '5', '6', '7', '8', '9', '10',
                'J', 'Q', 'K', 'A']
@@ -26,11 +28,11 @@ def obtener_cartas():
         if carta not in cartas:
             # Si la carta no está en la lista 'cartas', la agregamos.
             cartas.append(carta)
-        
+
     # Devolvemos la lista de 4 cartas seleccionadas al azar.
     return cartas
 
 
-#Ejemplo de uso:
+# Ejemplo de uso:
 mis_cartas = obtener_cartas()
 print(mis_cartas)
